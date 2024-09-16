@@ -6,7 +6,7 @@ const Tasks = (props) => {
     <>
       {allTasks.map((items) => {
         return (
-          <div className="task" key={items.id}>
+          <li className="task" key={items.id}>
             <div>
               <p>{items.name}</p>
             </div>
@@ -20,7 +20,7 @@ const Tasks = (props) => {
                 Delete
               </button>
             </div>
-          </div>
+          </li>
         );
       })}
     </>
